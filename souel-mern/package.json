@@ -1,0 +1,26 @@
+{
+  "name": "souel-cafe-mern",
+  "description": "Full-stack MERN application for a coffee shop",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "cd server && npm install",
+    "build-client": "cd client && npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "cafe",
+    "coffee"
+  ]
+}
